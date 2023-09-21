@@ -82,6 +82,8 @@ func newTaskWindow(ToDoer fyne.App, List fyne.Widget) {
 
 func main() {
 	ToDoer := app.New()
+
+	//ToDoer.Settings().SetTheme(&builtinTheme{variant: VariantDark})
 	mainWindow := ToDoer.NewWindow("ToDoer")
 	mainWindow.Resize(fyne.Size{Width: 500, Height: 500})
 	mainWindow.SetFixedSize(true)
